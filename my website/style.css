@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+#carouselExampleIndicators img {
+    max-width: 50%;
+    max-height: 90vh;
+    margin-left: 350px;
+    margin-right: 250px;
+}
+
+.button {
+    color:black
+}
+
+.center {
+    display: block;
+    margin-left: 350px;
+    margin-right: 50px;
+    height:auto;
+    width:fit-content; 
+  }
+
+.title {
+    text-align: center;
+    margin: 50px;
+    padding-bottom: 30px;
+}
+
+.title:hover {
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+}
+
+#team .row {
+    margin: 15px;
+}
+
+#team img {
+    width: 150px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #dde;
+}
+
+footer a {
+    margin: 5px;
+}
+
+#go-to-top {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+img {
+    padding-top: 50px;
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+*{
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #111;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+button:before{
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(5px);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-size: 400%;
+  transition: opacity .3s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+button:hover:before{
+  opacity: 1;
+}
+button:hover:active{
+  background: none;
+}
+button:hover:active:before{
+  filter: blur(2px);
+}
+@keyframes animate {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+.carousel {
+    padding-bottom: 30px;
+}
+
+p {
+    padding-bottom: 50px;
+}
+
+
+.navbar-nav {
+    font-style: Calibri;
+    font-weight: bold;
+    font-size: large;
+}
